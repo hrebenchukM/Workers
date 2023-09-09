@@ -10,6 +10,19 @@ void inputNewWorker(Worker* worker) {
 
 }
 
+void printWorker(Worker worker) {
+	cout << "First name:" << worker.firstName << ":" << endl;
+	cout << "Last name:" << worker.lastName << ":" << endl;
+	cout << "Telephone:" << worker.telephone << ":" << endl;
+}
+
+void printAllWorkers(Worker workers[], int N) {
+	cout << endl << "Workers list:" << endl;
+	for (int i = 0; i < N; i++) {
+		printWorker(workers[i]);
+	}
+}
+
 Worker* addWorker(Worker workers[], int& last)
 {
 	Worker* worker = new Worker;
